@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://WEB-INF/resources/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/WEB-INF/resources/css/bootstrap.min.css">
   <script src="/WEB-INF/resources/js/jquery-3.1.1/jquery.min.js"></script>
   <script src="/WEB-INF/resources/js/bootstrap.min.js"></script>
   
@@ -67,7 +67,7 @@ li a:hover:not(.active) {
 
    <li><a href="${url }">Add New Product</a></li>
    
-   <c:url var="allProducts" value="/Products"></c:url>
+   <c:url var="allProducts" value="/productlist"></c:url>
    
    <li><a href="${allProducts}">Browse all products</a></li>
    

@@ -12,23 +12,25 @@ import com.niit.model.Customer;
 public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	private CustomerDao customerDao;
+	@Override
 	public void saveCustomer(Customer customer){
+	   customerDao.saveCustomer(customer);	
 	}
+	@Override
 	public Customer  getCustomerById(int id) {
 		return (Customer)customerDao.getCustomerById(id);
 	}
-
+	@Override
 	public void updateCustomer(Customer customer) {
-		
-
+		customerDao.updateCustomer(customer);
 	}
-
+	@Override
 	public void deleteCustomer(Customer customer) {
-		
+		customerDao.deleteCustomer(customer);
 	}
-
+	@Override
 	public List<Customer> getAllCustomer() {
-		return null;
+		return customerDao.getAllCustomer();
 	}
 
 }

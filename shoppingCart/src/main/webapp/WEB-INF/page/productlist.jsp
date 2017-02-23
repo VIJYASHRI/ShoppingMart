@@ -24,6 +24,10 @@ $(document).ready(function(){
 				<tr>
 					<th>Product Name</th>
 					<th>Description</th>
+					<th>Weight</th>
+					<th>Quantity</th>
+					<th>Flavour</th>
+					<th>Price</th>
 					<th>Category</th>
                    <th>View/Edit/Delete</th>
 				</tr>
@@ -32,12 +36,15 @@ $(document).ready(function(){
 				<tr>
 					<td>${p.name }</td>
 					<td>${p.description }</td>
+					<td>${p.weight }</td>
+					<td>${p.quantity }</td>
+					<td>${p.flavour }</td>
+					<td>${p.price }</td>
 					<td>${p.category.categoryDetails}</td>
-				</tr>
-				<tr>
+				
 				<td>
 					<c:url var="viewProduct" value="/all/product/viewProduct/${p.id }"></c:url>
-					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span></a>
+					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span>Edit</a>
 					 
 					<c:url var="delete" value="/admin/product/deleteproduct/${p.id }"></c:url>
 					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span></a>

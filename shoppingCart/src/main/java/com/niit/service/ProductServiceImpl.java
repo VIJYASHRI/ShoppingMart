@@ -24,17 +24,17 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	public void updateProduct(Product product) {
-		
+		productDao.updateProduct(product);
 
 	}
 
 	public void deleteProduct(Product product) {
-		
+		productDao.deleteProduct(product);
 	}
 
 	public List<Product> getAllProduct() {
 
-		return null;
+		return productDao.getAllProduct();
 	}
 
 }	
