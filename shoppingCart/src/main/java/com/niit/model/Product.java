@@ -1,7 +1,5 @@
 package com.niit.model;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -37,8 +35,8 @@ public class Product {
 	@NotNull
 	private double price;
 	
-	@NotNull
-	private Date Mfg;
+	
+	
 	@ManyToOne
 	@JoinColumn(name="cid")
 	private Category category;
@@ -94,11 +92,5 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public Date getMfg() {
-		return Mfg;
-	}
-	public void setMfg(Date mfg) {
-		Mfg = mfg;
-	}
-
+	
 }
