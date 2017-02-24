@@ -81,6 +81,15 @@ li a:hover:not(.active) {
 			<a href="<c:url value="/products/productsByCategory?searchCondition=${c.categoryDetails }"></c:url>">
 			${c.categoryDetails }</a></li>
 			</c:forEach>
+			
+			<c:url var="url1" value="/products/productsByCategory?searchCondition=New Arrivals"> </c:url>
+			<li><a href="${url1} }">New Arrivals</a></li>
+			<c:url var="url1" value="/products/productsByCategory?searchCondition=Birthday"></c:url>
+			<li><a href="${url2} }">Birthday</a></li>
+			<c:url var="url1" value="/products/productsByCategory?searchCondition=Anniversary"></c:url>
+			<li><a href="${url3} }">Anniversary</a></li>
+			<c:url var="url1" value="/products/productsByCategory?searchCondition=Special Occasions"></c:url>
+			<li><a href="${url4} }">Special Occasions</a></li>
 			</ul>
 			</li>
 			

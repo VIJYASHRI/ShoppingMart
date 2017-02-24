@@ -1,5 +1,6 @@
 package com.niit.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -37,7 +38,7 @@ public class Product {
 	
 	
 	
-	@ManyToOne
+	@ManyToOne(cascade = { CascadeType.ALL})
 	@JoinColumn(name="cid")
 	private Category category;
 

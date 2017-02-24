@@ -43,14 +43,14 @@ $(document).ready(function(){
 					<td>${p.category.categoryDetails}</td>
 				
 				<td>
-					<c:url var="viewProduct" value="/all/product/viewProduct/${p.id }"></c:url>
-					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span>Edit</a>
+					<c:url var="viewProduct" value="/productlist/viewProduct/${p.id }"></c:url>
+					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span>View</a>
 					 
-					<c:url var="delete" value="/admin/product/deleteproduct/${p.id }"></c:url>
-					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span></a>
+					<c:url var="delete" value="/productlist/deleteproduct/${p.id }"></c:url>
+					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span>Edit</a>
 					
-					<c:url var="edit" value="/admin/product/editform/${p.id }"></c:url>
-					<a href="${edit }"><span class="glyphicon glyphicon-pencil"></span></a>
+					<c:url var="edit" value="/productlist/editform/${p.id }"></c:url>
+					<a href="${edit }"><span class="glyphicon glyphicon-pencil"></span>Delete</a>
 				    </td>
 				</tr>
 			</c:forEach>

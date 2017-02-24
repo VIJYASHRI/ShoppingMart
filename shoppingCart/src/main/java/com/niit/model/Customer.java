@@ -29,6 +29,9 @@ public class Customer {
 	@JoinColumn(name="ShippingAddress_id")
 	private ShippingAddress shippingAddress;
 	
+	@OneToOne(cascade = {CascadeType.ALL})
+	@JoinColumn(name="cart_id")
+	private Cart cart;
 	
 	public int getId() {
 		return id;
@@ -79,6 +82,12 @@ public class Customer {
 	}
 	public void setShippingAddress(ShippingAddress shippingAddress) {
 		this.shippingAddress = shippingAddress;
+	}
+	public Cart getCart() {
+		return cart;
+	}
+	public void setCart(Cart cart) {
+		this.cart = cart;
 	}
 
 }

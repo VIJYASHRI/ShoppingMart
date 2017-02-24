@@ -19,7 +19,7 @@ $('input[name=mfg]').datepicker({
 <body>
 <div class="container-wrapper">
 <div class="container">
-<c:url value="/admin/product/editProduct" var="url"></c:url>
+<c:url value="/editProduct" var="url"></c:url>
 <form:form action="${url }"  commandName="product">
 
 <div class="form-group">
@@ -66,7 +66,7 @@ out.println(c.categoryDetails);
 <c:forEach var="c" items="${categories}">
 <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryDetails }
 </c:forEach>
-<form:errors path="mfg" cssStyle="color:#ff0000"></form:errors>
+<form:errors path="mfg" cssStyle="color:grey"></form:errors>
 </div>
 
 <input type="submit" value="Edit Product" class="btn btn-default">
