@@ -13,6 +13,7 @@ import com.niit.model.Product;
 public class ProductDaoImpl implements ProductDao{
 	@Autowired
 	private SessionFactory sessionFactory;
+	Logger logger=Logger.getLogger(CustomerDaoImpl.class);
 	public ProductDaoImpl(SessionFactory sessionFactory){
 		super();
 		this.sessionFactory=sessionFactory;

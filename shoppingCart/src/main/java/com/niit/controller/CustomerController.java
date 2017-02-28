@@ -32,7 +32,7 @@ public class CustomerController {
 	public String saveCustomer(@ModelAttribute("customer") Customer customer) {
 		customerService.saveCustomer(customer);
 		
-		return "redirect:/registerCustomer";
+		return "redirect:/home";
 
 	}
 

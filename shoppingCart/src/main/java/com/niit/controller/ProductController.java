@@ -31,7 +31,8 @@ public String getProductForm(Model model){
 	return "products";
 }
 @RequestMapping(value="/addProduct", method=RequestMethod.POST)
-public String saveProduct(@ModelAttribute("product") Product product) {
+public String saveProduct(@ModelAttribute("product") Product product, BindingResult result) {
+	
 	productService.saveProduct(product);
 	return "redirect:/products";
 }

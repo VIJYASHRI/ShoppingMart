@@ -6,7 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+
+
 <script>
+
 $(document).ready(function(){
 	var searchCondition='${searchCondition}';
 	$('.table').DataTable({
@@ -26,7 +29,7 @@ $(document).ready(function(){
 					<th>Description</th>
 					<th>Weight</th>
 					<th>Quantity</th>
-					<th>Flavour</th>
+					<th>Flavor</th>
 					<th>Price</th>
 					<th>Category</th>
                    <th>View/Edit/Delete</th>
@@ -42,8 +45,8 @@ $(document).ready(function(){
 					<td>${p.price }</td>
 					<td>${p.category.categoryDetails}</td>
 				
-				<td>
-					<c:url var="viewProduct" value="/productlist/viewProduct/${p.id }"></c:url>
+					<c:url var="viewProduct" value="/product/viewProduct/${p.id }"></c:url>
+					<td>
 					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span>View</a>
 					 
 					<c:url var="delete" value="/productlist/deleteproduct/${p.id }"></c:url>
@@ -55,7 +58,8 @@ $(document).ready(function(){
 				</tr>
 			</c:forEach>
 		</table>
-
+<!-- <button type="button" class="btn btn-success">Hello</button> -->
+			
 	</div>
 </body>
 </html>
