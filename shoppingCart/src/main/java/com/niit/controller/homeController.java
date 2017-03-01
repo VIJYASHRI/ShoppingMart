@@ -28,4 +28,8 @@ public String aboutUs(){
 	
 	return "aboutUs";
 }
+@RequestMapping("/login")
+public String login(){
+	return "login";
+}
 }

@@ -89,10 +89,11 @@ li.dropdown {
 	<ul>
 		<li><a href="home">Home</a></li>
 		<li><a href="aboutUs">About Us</a></li>
-		<li><a href="<c:url value="/registerCustomer"></c:url>">Register</a></li>
+		
 		<c:url var="url" value="/products"></c:url>
 		<li><a href="${url }">Add New Product</a></li>
-		<c:url var="allProducts" value="/productlist"></c:url>
+		
+		<c:url var="allProducts" value="/all/product/productlist"></c:url>
 		<li><a href="${allProducts}">Browse all products</a></li>
 
 		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Select
@@ -100,8 +101,9 @@ li.dropdown {
 			<div class="dropdown-content">
 
        <a href="products/productsByCategory?searchCondition=New Arrivals">New Arrivals</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="products/productsByCategory?searchCondition=Birthday">Birthday</a>
+      <a href="products/productsByCategory?searchCondition=Anniversary">Anniversary</a>
+      <a href="products/productsByCategory?searchCondition=Special Occasions">Special Occasions</a>
 
 				<%-- <c:url var="url_1"
 					value="/products/productsByCategory?searchCondition=New Arrivals">
@@ -117,7 +119,8 @@ li.dropdown {
 					value="/products/productsByCategory?searchCondition=Special Occasions"></c:url>
 				<li><a href="${url_4} }">Special Occasions</a></li>
 	</ul> --%>
-
+		<li><a href="<c:url value="/login" ></c:url>"></a></li>
+		<li><a href="<c:url value="/all/registerCustomer"></c:url>">Register</a></li>
 	</div>
 	</li>
 	</ul>

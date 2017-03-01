@@ -3,27 +3,41 @@ package com.niit.dao;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.h2.engine.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.niit.model.Authorities;
 import com.niit.model.Customer;
+
+
+
 @Repository
 @Transactional
 public class CustomerDaoImpl implements CustomerDao{
 	@Autowired
 	private SessionFactory sessionFactory;
-	Logger logger=Logger.log(CustomerDaoImpl.class);
+	Logger logger=Logger.getLogger(CustomerDaoImpl.class);
 	public CustomerDaoImpl(SessionFactory sessionFactory){
 		super();
 		this.sessionFactory=sessionFactory;
 	}
-	@Override
+	
 	public void saveCustomer(Customer customer) {
-		sessionFactory.getCurrentSession().save(customer);
-	}
-	@Override
+	
+	customer.getUsers().setEnabled(true);
+	String username=customer.getUsers().getUsername(); //Assignment
+	String role="ROLE_USER";
+	
+	Authorities authorities=new Authorities();
+	//set the values
+	authorities.setUsername(username);
+	authorities.setRole(role);
+	return sessionFactory.getCurrentSession().get(authorities);
+	
+	
 	public Customer getCustomerById(int id) {
 	return sessionFactory.getCurrentSession().get(Customer.class, id);
 		}
@@ -41,7 +55,6 @@ public class CustomerDaoImpl implements CustomerDao{
 		
 		return (List<Customer>) sessionFactory.getCurrentSession().createQuery("from Customer").list();
 	}
-
 	
 }
 	

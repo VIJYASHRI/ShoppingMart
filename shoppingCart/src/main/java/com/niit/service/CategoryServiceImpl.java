@@ -14,6 +14,10 @@ public class CategoryServiceImpl implements CategoryService{
 	public List<Category> getCategory(){
 		return categoryDao.getCategories();
 	}
+	@Override
+	public void saveCategory(Category category) {
+				
+	}
 	
 }
 
