@@ -7,7 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="<c:url value="j_spring_security_check"></c:url>"method="post">
+ENTER USERNAME AND PASSWORD <br>
+${error }
+${logout }
+${registrationSuccess }   
+
+<!-- these 3 are model attribute, fr one value other two will be null -->
+<form action='<c:url value="j_spring_security_check"></c:url>' method="POST"></form>
 Enter username <input type="text" name="j_username"><br>
 Enter password <input type="text" name="j_password"><br>
  <input type="submit" value="submit">

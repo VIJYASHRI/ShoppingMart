@@ -36,8 +36,14 @@ public class Product {
 	@NotNull
 	private double price;
 	
+	private String date;
 	
-	
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	@ManyToOne(cascade = { CascadeType.ALL})
 	@JoinColumn(name="cid")
 	private Category category;

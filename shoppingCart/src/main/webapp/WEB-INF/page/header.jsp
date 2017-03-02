@@ -3,6 +3,8 @@
 <%@ page isELIgnored="false"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="security"
+			uri="http://www.springframework.org/security/tags" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -90,8 +92,14 @@ li.dropdown {
 		<li><a href="home">Home</a></li>
 		<li><a href="aboutUs">About Us</a></li>
 		
-		<c:url var="url" value="/products"></c:url>
+		<c:url var="url" value="/admin/products"></c:url>
+		
+		<c:if test="${pageContext.request.userPrincipal.name !=null }">
+		<!-- for admin access only, also add tag libs for security access for admin role -->
+		
+		<security:authorize access="hasRole('ROLE_ADMIN')">
 		<li><a href="${url }">Add New Product</a></li>
+		</security:authorize>
 		
 		<c:url var="allProducts" value="/all/product/productlist"></c:url>
 		<li><a href="${allProducts}">Browse all products</a></li>
@@ -119,8 +127,16 @@ li.dropdown {
 					value="/products/productsByCategory?searchCondition=Special Occasions"></c:url>
 				<li><a href="${url_4} }">Special Occasions</a></li>
 	</ul> --%>
-		<li><a href="<c:url value="/login" ></c:url>"></a></li>
-		<li><a href="<c:url value="/all/registerCustomer"></c:url>">Register</a></li>
+		<li><a href="">WelCome ${pageContext.request.userPrincipal.name }</a>
+		</c:if>
+		
+		<c:if test="${pageContext.request.userPrincipal.name ==null }">
+		<li><a href="<c:url value="/login" ></c:url>">login</a></li>
+		<li><a href="<c:url value="/registerCustomer"></c:url>">Register</a></li>
+		</c:if>
+		<c:if test="${pageContext.request.userPrincipal.name !=null }">
+		<li><a href="<c:url value="j_spring_security_logout" ></c:url>">logout</a></li>
+	     </c:if>
 	</div>
 	</li>
 	</ul>

@@ -22,20 +22,28 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 	
-	@RequestMapping("/registerCustomer")
+	@RequestMapping("/editCustomer")  //registerForm=>editForm
 	public String getRegistrationForm(Model model) {
 		model.addAttribute("customer", new Customer());
 		return "registerCustomer";
 	}
 
 	@RequestMapping(value = "/registerCustomer", method = RequestMethod.POST)
-	public String saveCustomer(@ModelAttribute("customer") Customer customer) {
+	public String registerCustomer(@Valid @ModelAttribute(value="customer") Customer customer  
+			,BindingResult result, Model model){
+		if(result.hasErrors())
+			return "registerCustomer";
+		try{
 		customerService.saveCustomer(customer);
-		
-		return "redirect:/home";
-
+		}catch (Exception e){
+			model.addAttribute("duplicateUserName","Username already exist. Please enter different username");
+			System.out.println("Exception is " + e.getMessage());
+			return "registerCustomer";
+		}
+		model.addAttribute("registrationSuccess","Registered successfully.. login with username and password");
+		return "login";
 	}
-
+	
 	@RequestMapping("/getAllCustomers")
 	public String getAllCustomer(Model model) {
 		List<Customer> customers = customerService.getAllCustomer();

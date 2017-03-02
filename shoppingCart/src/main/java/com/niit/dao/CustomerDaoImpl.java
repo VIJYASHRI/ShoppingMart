@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.model.Authorities;
+import com.niit.model.Cart;
 import com.niit.model.Customer;
 
 
@@ -31,13 +32,18 @@ public class CustomerDaoImpl implements CustomerDao{
 	String username=customer.getUsers().getUsername(); //Assignment
 	String role="ROLE_USER";
 	
-	Authorities authorities=new Authorities();
-	//set the values
+	Authorities authorities=new Authorities();      //set the values
 	authorities.setUsername(username);
 	authorities.setRole(role);
-	return sessionFactory.getCurrentSession().get(authorities);
+	sessionFactory.getCurrentSession().save(authorities);
 	
+	Cart cart=new Cart();
+	customer.setCart(cart);
+	cart.setCustomer(customer);
+	sessionFactory.getCurrentSession().save(customer);
+	logger.debug("==============================");
 	
+	}
 	public Customer getCustomerById(int id) {
 	return sessionFactory.getCurrentSession().get(Customer.class, id);
 		}
