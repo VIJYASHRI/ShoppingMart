@@ -34,7 +34,7 @@
     
     <security:form-login login-page="/login"
     authentication-failure-url="/login?error"
-    login-processing-url="/j_spring_security-check"   
+    login-processing-url="/j_spring_security_check"   
     default-target-url="/home"
     username-parameter="j_username"            
     password-parameter="j_password" />
@@ -53,5 +53,5 @@
     
     </security:authentication-provider>    
     </security:authentication-manager>
-  </beans>  
+ </beans>  
      

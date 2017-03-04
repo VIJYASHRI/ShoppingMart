@@ -44,6 +44,7 @@
                <value>com.niit.model.BillingAddress</value>
                <value>com.niit.model.ShippingAddress</value>
                <value>com.niit.model.Authorities</value>
+               <value>com.niit.model.CartItem</value>
             </list>
         </property>
                

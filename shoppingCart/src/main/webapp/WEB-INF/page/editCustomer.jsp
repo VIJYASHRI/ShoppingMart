@@ -10,9 +10,9 @@
 <body>
 <div class="container-wrapper">
 <div class="container">
-<h3>Edit Customer Details</h3>
+<h3>Customer Details</h3>
 <c:url value="/editCustomer" var="url"></c:url>
-<form:form action="${url }"  commandName="customer">
+<form:form action="${url }"  commandName="customer" method="post">
 
 <div class="form-group">
 <label for="id"></label>

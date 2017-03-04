@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -22,7 +21,7 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 	
-	@RequestMapping("/editCustomer")  //registerForm=>editForm
+	@RequestMapping("/registerCustomer")  //registerForm=>editForm
 	public String getRegistrationForm(Model model) {
 		model.addAttribute("customer", new Customer());
 		return "registerCustomer";
@@ -32,7 +31,7 @@ public class CustomerController {
 	public String registerCustomer(@Valid @ModelAttribute(value="customer") Customer customer  
 			,BindingResult result, Model model){
 		if(result.hasErrors())
-			return "registerCustomer";
+			return "redirect:/registerCustomer";
 		try{
 		customerService.saveCustomer(customer);
 		}catch (Exception e){
@@ -51,21 +50,21 @@ public class CustomerController {
 		return "customerlist";
 	}
 
-	@RequestMapping("/viewCustomer/{id}")
+	@RequestMapping("/viewCustomer")
 	public String viewCustomer(Model model) {
 		List<Customer> allCustomers = customerService.getAllCustomer();
 		model.addAttribute("customer", allCustomers);
 		return "viewCustomer";
 	}
-
+/*
 	@RequestMapping("/deletecustomer/{id}")
 	public String deleteCustomer(@PathVariable("id") int id) {
 		Customer customer = customerService.getCustomerById(id);
 		customerService.deleteCustomer(customer);
 		return "redirect:/productlist";
 	}
-
-	@RequestMapping("/editCustomer")
+*/
+	@RequestMapping(value="/editCustomer", method = RequestMethod.POST)
 	public String editCustomerDetails(@Valid @ModelAttribute("customer") Customer customer, BindingResult result) {
 		if (result.hasErrors())
 			return "customerform";

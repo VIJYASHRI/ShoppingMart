@@ -4,7 +4,10 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.h2.engine.User;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.persister.entity.Queryable;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,23 +47,32 @@ public class CustomerDaoImpl implements CustomerDao{
 	logger.debug("==============================");
 	
 	}
-	public Customer getCustomerById(int id) {
+	public Customer getCustomerByUsername(String username){
+		return sessionFactory.getCurrentSession().get(Customer.class,username);
+		
+	}
+	
+	/*public Customer getCustomerById(int id) {
 	return sessionFactory.getCurrentSession().get(Customer.class, id);
-		}
-	@Override
+		}*/
+	
 	public void updateCustomer(Customer customer) {
 		sessionFactory.getCurrentSession().update(customer);
 	}
-	@Override
+	
 	public void deleteCustomer(Customer customer) {
 		sessionFactory.getCurrentSession().delete(customer);
 		
 	}
-	@Override
-	public List<Customer> getAllCustomer() {
-		
-		return (List<Customer>) sessionFactory.getCurrentSession().createQuery("from Customer").list();
-	}
 	
+	public List<Customer> getAllCustomer() {
+	return (List<Customer>) sessionFactory.getCurrentSession().createQuery("from Customer").list();
+	}
+
+	@Override
+	public Customer getCustomerByUserName(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}	
 }
 	
