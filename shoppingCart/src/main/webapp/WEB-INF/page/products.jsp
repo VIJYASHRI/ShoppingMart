@@ -12,7 +12,13 @@
          rel = "stylesheet">
       <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    
+    <script>
+		$(function()){
+			$('input[name=mfg]').datepicker({
+				format:'yyyy-mm-dd'
+			});
+		};
+	</script>
 </head>
 <body>
 <%@ include file="header.jsp" %><br>
@@ -57,6 +63,14 @@
       <label class="control-label col-sm-2" for="price">Price:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="price" placeholder="Enter the price of product"/>
+      </div>
+    </div>
+    
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="category">Category:</label>
+      <div class="col-sm-10">
+      <c:forEach var="category" items="${categories }"></c:forEach>
+        <form:input class="form-control" path="category" placeholder="Enter product category"/>
       </div>
     </div>
     

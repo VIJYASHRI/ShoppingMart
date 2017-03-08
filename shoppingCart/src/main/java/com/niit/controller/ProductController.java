@@ -41,7 +41,7 @@ public String getProductForm(Model model){
 @RequestMapping(value="/admin/addProduct", method=RequestMethod.POST)
 public String saveProduct(@ModelAttribute("product") Product product, BindingResult result, HttpServletRequest request) {
 	if(result.hasErrors())
-		return "addProduct";
+		return "redirect:/products";
 	productService.saveProduct(product);
 	
 	MultipartFile prodImage=product.getImage();
@@ -60,7 +60,6 @@ public String saveProduct(@ModelAttribute("product") Product product, BindingRes
 	}
 	return "redirect:/products";
 }
-
 
 @RequestMapping("/all/product/productlist")
 public String getAllProduct(Model model){

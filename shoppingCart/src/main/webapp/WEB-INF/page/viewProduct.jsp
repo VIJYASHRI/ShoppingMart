@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div>
-		<div class="page=header">
+	<div ng-app="app" ng-controller="ProductController">
+		<div class="page-header">
 		<b>PRODUCT DETAILS</b>
 		</div>
 		<table class="table">
@@ -28,11 +28,17 @@
 		
 		  <tr>
 		  <td>Manufacturing Date :</td>
-		  <td>${product.manufacturingDate }</td>
+		  <td>${product.mfg }</td>
+		 </tr>
+		 <tr>
+		 <td>
+		 <c:url value="addCartItem/${product.id }" var="url"></c:url>
+		 <td><a href="${url }" ng-click="addToCart(${productId })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+		 </td>
 		 </tr>
 		</table>
 	</div>
-
+<script src="/resources/js/controller.js"></script>
 </body>
-<%@ include file="footer.jsp"%>
+
 </html>
