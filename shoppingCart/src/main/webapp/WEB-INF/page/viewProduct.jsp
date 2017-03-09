@@ -33,12 +33,12 @@
 		 <tr>
 		 <td>
 		 <c:url value="addCartItem/${product.id }" var="url"></c:url>
-		 <td><a href="${url }" ng-click="addToCart(${productId })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+		 <td><a href="${url }" ng-click="addToCart(${product.id })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
 		 </td>
 		 </tr>
 		</table>
 	</div>
-<script src="/resources/js/controller.js"></script>
+<script src="<c:url value="/resources/js/controller.js"></c:url>"></script>
 </body>
 
 </html>

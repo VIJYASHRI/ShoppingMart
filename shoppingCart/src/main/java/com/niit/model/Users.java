@@ -7,16 +7,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
 public class Users {
  @Id
  @GeneratedValue(strategy=GenerationType.AUTO)
  private int id;
+ 
+ 	@NotEmpty(message="please enter username")
  		@Column(unique=true)
  private String username;
+ 	
+ 	@NotEmpty(message="please enter password")
  private String password;
         
  private boolean enabled=true;
+ 
  @OneToOne(mappedBy="users")
  private Customer customer;
 public int getId() {

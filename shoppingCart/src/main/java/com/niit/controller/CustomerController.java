@@ -21,7 +21,7 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 	
-	@RequestMapping("/registerCustomer")  //registerForm=>editForm
+	@RequestMapping("/registerCustomer")  //registerForm=>editForm=>registerForm
 	public String getRegistrationForm(Model model) {
 		model.addAttribute("customer", new Customer());
 		return "registerCustomer";

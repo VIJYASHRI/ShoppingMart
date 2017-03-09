@@ -25,7 +25,8 @@
 
 <!-- Angular Js -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-<!-- JQuery -->
+
+<!-- JQuery (for searchCondition-->
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script
 	src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
@@ -131,7 +132,11 @@ li.dropdown {
 				
 	</li>
 	</ul> --%>
-		<a href="">WelCome ${pageContext.request.userPrincipal.name }</a>
+	
+	<security:authorize access="hasRole('ROLE_USER')">
+	<li><a href="<c:url value="/cart/getCartId"></c:url>">Cart</a></li>
+	</security:authorize>
+	<li><a href="">WelCome ${pageContext.request.userPrincipal.name }</a><li>
 		</c:if>
 		
 		<c:if test="${pageContext.request.userPrincipal.name ==null }">
@@ -143,4 +148,71 @@ li.dropdown {
 	     </c:if>
 	
 	</ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	

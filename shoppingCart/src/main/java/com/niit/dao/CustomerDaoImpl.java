@@ -69,6 +69,6 @@ public class CustomerDaoImpl implements CustomerDao{
 	public Customer getCustomerByUserName(String username) {
 		// TODO Auto-generated method stub
 		return null;
-	}	
+	}
+
 }
-	

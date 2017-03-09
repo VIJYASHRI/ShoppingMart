@@ -1,5 +1,7 @@
 package com.niit.model;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,13 +11,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 @Entity
 @Table(name="product")
-public class Product {
+public class Product implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
@@ -26,20 +29,25 @@ public class Product {
 	@NotEmpty(message="Product description is mandatory")
 	private String description;
 	
+	@Min(value=10)
+	private double price;
+	
 	@Transient
 	private MultipartFile image;
 	
 	@NotNull
 	private int weight;
 	
-	@NotNull
+	@Min(value=1)
 	private int quantity;
 	
 	@NotEmpty(message="Product flavour is mandatory")
 	private String flavour;
 	
-	@NotNull
-	private double price;
+	@ManyToOne(cascade = { CascadeType.ALL})
+	@JoinColumn(name="cid")
+	private Category category;
+
 	
 	private String date;
 	
@@ -49,10 +57,7 @@ public class Product {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	@ManyToOne(cascade = { CascadeType.ALL})
-	@JoinColumn(name="cid")
-	private Category category;
-
+	
 	
 	public Category getCategory() {
 		return category;
