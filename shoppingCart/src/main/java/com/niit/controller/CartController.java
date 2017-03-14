@@ -25,7 +25,7 @@ public class CartController {
 	public String getCartId(Model model){
 	User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 	String Username=user.getUsername();
-	Customer customer=CustomerService.getCustomerByUsername(username);
+	Customer customer=CustomerService.getCustomerByUserName(username);
 	Cart cart=customer.getCart();
 	int CartId=cart.getId();
 	model.addAttribute("cartId", CartId);

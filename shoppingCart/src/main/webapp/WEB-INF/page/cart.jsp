@@ -11,18 +11,26 @@
 <div ng-app="app" ng-controller="ProductController">
 <div ng-init="getCart(${cartId })">
 <table class="table table-striped">
-<thead>
 
+
+<tr>
+<td>Clear Cart</td><td>Check Out</td>
+</tr>
+
+<thead>
 <tr><th>Name</th><th>Quantity</th><th>Total Price</th>
 </tr>
+
 </thead>
 
 <tr ng-repeat="cartItem in cart.cartItems">
 <td>{{cartItem.product.name}}</td>
 <td>{{cartItem.quantity}}</td>
 <td>{{cartItem.totalPrice}}</td>
+<td>Remove</td>
 </tr>
 </table>
+Total Price : {{calculateGrandTotal()}}
 
 </div>
 </div>

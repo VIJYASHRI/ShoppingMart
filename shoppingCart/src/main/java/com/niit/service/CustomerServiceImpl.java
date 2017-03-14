@@ -39,7 +39,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Customer getCustomerByUserName(String username) {
 	
-		return null;
+		return customerDao.getCustomerByUserName(username);
 	}
 
 }

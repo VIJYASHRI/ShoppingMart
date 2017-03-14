@@ -65,9 +65,9 @@ public class CustomerDaoImpl implements CustomerDao{
 	return (List<Customer>) sessionFactory.getCurrentSession().createQuery("from Customer").list();
 	}
 
-	@Override
+	
 	public Customer getCustomerByUserName(String username) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

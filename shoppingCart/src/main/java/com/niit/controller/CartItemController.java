@@ -17,6 +17,7 @@ import com.niit.model.CartItem;
 import com.niit.model.Customer;
 import com.niit.model.Product;
 import com.niit.service.CartItemService;
+import com.niit.service.CartService;
 import com.niit.service.CustomerService;
 import com.niit.service.ProductService;
 
@@ -28,6 +29,8 @@ public class CartItemController {
 	private CustomerService customerService;
 	@Autowired
 	private ProductService productService;
+	@Autowired
+	private CartService cartService;
 	
 @RequestMapping("/cart/addCartItem/{pid}")
 @ResponseStatus(value=HttpStatus.NO_CONTENT)
@@ -59,4 +62,19 @@ public void saveCartItem(@PathVariable(value="pid") int productId){
 	cartItem.setCart(cart);   // set cart id
 	cartItemService.saveCartItem(cartItem);   //insert query
 }
+
+@RequestMapping("/cart/removeCartItem/{cartItemId}")
+@ResponseStatus(value=HttpStatus.NO_CONTENT)
+public void removeCartItem(@PathVariable int cartItemId){
+	CartItem cartItem=cartItemService.getCartItem(cartItemId);
+	cartItemService.deleteCartItem(cartItem);
+}
+@RequestMapping("/cart/removeAllCartItems/{cartId}")
+@ResponseStatus(value=HttpStatus.NO_CONTENT)
+public void removeAllCartItems(@PathVariable int cartId){
+	Cart cart=cartService.getCart(cartId);
+	cartItemService.removeAllCartItems(cart);
+}
+
+
 }

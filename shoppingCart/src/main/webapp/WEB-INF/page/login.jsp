@@ -9,7 +9,10 @@
 </head>
 <body>
 <%@ include file="header.jsp" %><br>
+
+<div>
 ENTER USERNAME AND PASSWORD <br>
+</div>
 ${error }
 ${logout }
 ${registrationSuccess }   

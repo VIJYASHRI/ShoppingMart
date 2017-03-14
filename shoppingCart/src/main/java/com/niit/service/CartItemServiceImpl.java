@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.dao.CartItemDao;
+import com.niit.model.Cart;
 import com.niit.model.CartItem;
 
 @Service(value="cartItemService")
@@ -16,6 +17,24 @@ public class CartItemServiceImpl implements CartItemService {
 	
 	public void saveCartItem(CartItem cartItem) {
 	cartItemDao.saveCartItem(cartItem);
+	}
+
+	@Override
+	public void deleteCartItem(CartItem cartItem) {
+	
+		
+	}
+
+	@Override
+	public void getCartItem(int cartItemId) {
+		
+		
+	}
+
+	@Override
+	public void removeAllCartItems(Cart cart) {
+	
+		
 	}
 
 }
