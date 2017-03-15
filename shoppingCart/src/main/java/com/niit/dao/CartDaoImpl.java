@@ -21,4 +21,8 @@ public CartDaoImpl(SessionFactory sessionFactory){
 	
 	}
 
+	public void saveCart(Cart cart) {
+		
+	}
+
 }

@@ -67,7 +67,7 @@ public void saveCartItem(@PathVariable(value="pid") int productId){
 @ResponseStatus(value=HttpStatus.NO_CONTENT)
 public void removeCartItem(@PathVariable int cartItemId){
 	CartItem cartItem=cartItemService.getCartItem(cartItemId);
-	cartItemService.deleteCartItem(cartItem);
+	cartItemService.removeCartItem(cartItem);
 }
 @RequestMapping("/cart/removeAllCartItems/{cartId}")
 @ResponseStatus(value=HttpStatus.NO_CONTENT)

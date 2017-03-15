@@ -19,22 +19,17 @@ public class CartItemServiceImpl implements CartItemService {
 	cartItemDao.saveCartItem(cartItem);
 	}
 
-	@Override
-	public void deleteCartItem(CartItem cartItem) {
-	
-		
+	public CartItem getCartItem(int cartItemId) {
+		return cartItemDao.getCartItem(cartItemId);
+	}
+	public void removeCartItem(CartItem cartItem) {
+		cartItemDao.removeCartItem(cartItem);	
 	}
 
-	@Override
-	public void getCartItem(int cartItemId) {
-		
-		
-	}
-
-	@Override
 	public void removeAllCartItems(Cart cart) {
-	
+	cartItemDao.removeAllCartItems(cart);
 		
 	}
+
 
 }

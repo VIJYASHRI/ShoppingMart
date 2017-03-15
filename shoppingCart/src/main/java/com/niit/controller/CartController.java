@@ -1,5 +1,7 @@
 package com.niit.controller;
 
+import java.security.Principal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
@@ -22,10 +24,9 @@ public class CartController {
 	private CartService cartService;
 	
 @RequestMapping("/cart/getCartId")	
-	public String getCartId(Model model){
-	User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-	String Username=user.getUsername();
-	Customer customer=CustomerService.getCustomerByUserName(username);
+	public String getCartId(Model model,Principal p){
+	String Username=p.getName();
+	Customer customer=customerService.getCustomerByUserName(Username);
 	Cart cart=customer.getCart();
 	int CartId=cart.getId();
 	model.addAttribute("cartId", CartId);
