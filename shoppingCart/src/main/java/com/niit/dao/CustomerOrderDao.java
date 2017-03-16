@@ -1,8 +1,8 @@
 package com.niit.dao;
 
-import com.niit.model.CustomerOrder;
+import com.niit.model.Cart;
 
 public interface CustomerOrderDao {
-	public void saveCustomerOrder(CustomerOrder customerOrder);
-	public void deleteCustomerOrder(CustomerOrder customerOrder);
+	public void saveCustomerOrder(Cart cart);
+	
 }

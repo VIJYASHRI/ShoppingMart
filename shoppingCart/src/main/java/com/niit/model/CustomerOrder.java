@@ -12,16 +12,76 @@ import javax.persistence.OneToOne;
 public class CustomerOrder {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private int Orderid;
 	
-	@JoinColumn(name="cart_id")
-	private Cart cart;
-	
-	
-	@JoinColumn(name="product_id")
-	private Product product;
-	
-	
+	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customer;
+
+	@OneToOne
+	@JoinColumn(name="billingAddress_id")
+	private BillingAddress billingAddress;
+	
+	@OneToOne
+	@JoinColumn(name="shippingAddress_id")
+	private ShippingAddress shippingAddress;
+	
+	
+	@OneToOne
+	@JoinColumn(name="cart_id")
+	private Cart cart;
+
+
+	public int getOrderid() {
+		return Orderid;
+	}
+
+
+	public void setOrderid(int orderid) {
+		Orderid = orderid;
+	}
+
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+
+	public BillingAddress getBillingAddress() {
+		return billingAddress;
+	}
+
+
+	public void setBillingAddress(BillingAddress billingAddress) {
+		this.billingAddress = billingAddress;
+	}
+
+
+	public ShippingAddress getShippingAddress() {
+		return shippingAddress;
+	}
+
+
+	public void setShippingAddress(ShippingAddress shippingAddress) {
+		this.shippingAddress = shippingAddress;
+	}
+
+
+	public Cart getCart() {
+		return cart;
+	}
+
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+	
+	
+	
+	
 }
