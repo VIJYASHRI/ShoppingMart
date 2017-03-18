@@ -16,20 +16,20 @@ public class CustomerOrder implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int Orderid;
 	
-	@OneToOne(cascade = {CascadeType.ALL})
+	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customer;
 
-	@OneToOne(cascade = {CascadeType.ALL})
+	@OneToOne
 	@JoinColumn(name="billingAddress_id")
 	private BillingAddress billingAddress;
 	
-	@OneToOne(cascade = {CascadeType.ALL})
+	@OneToOne
 	@JoinColumn(name="shippingAddress_id")
 	private ShippingAddress shippingAddress;
 	
 	
-	@OneToOne(cascade = {CascadeType.ALL})
+	@OneToOne
 	@JoinColumn(name="cart_id")
 	private Cart cart;
 
