@@ -9,7 +9,7 @@
   }
   </style>
 </head>
-<body><center>
+<body background="1607.jpg"><center>
  <h2>WelCome to my page</h2>
 <div class="container">
   <br>
