@@ -26,8 +26,8 @@
 <body>
 <div class="container-wrapper">
 <div class="container">
-<c:url value="/editProduct" var="url"></c:url>
-<form:form action="${url }"  commandName="product">
+<c:url value="/admin/editProduct" var="url"></c:url>
+<form:form action="${edit }" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data">
 
 <div class="form-group">
 <label for="id"></label>
@@ -40,10 +40,17 @@
 <form:errors path="name" cssStyle="color:#ff0000"></form:errors>
 </div>
 
+
 <div class="form-group">
-<label for="description">Description</label>
-<form:input path="description" class="form-control"/>
-<form:errors path="description" cssStyle="color:#ff0000"></form:errors>
+<label for="weight">Weight</label>
+<form:input path="weight" class="form-control"/>
+<form:errors path="weight" cssStyle="color:#ff0000"></form:errors>
+</div>
+
+<div class="form-group">
+<label for="flavor">Flavor</label>
+<form:input path="flavor" class="form-control"/>
+<form:errors path="flavor" cssStyle="color:#ff0000"></form:errors>
 </div>
 
 <div class="form-group">
@@ -59,7 +66,7 @@
 </div>
 
 <div class="form-group">
-<label for="mfg">Mfg Date</label>
+<label for="mfg">Date of delivery</label>
 <form:input path="mfg" class="form-control"/>
 <form:errors path="mfg" cssStyle="color:#ff0000"></form:errors>
 </div>
@@ -74,6 +81,12 @@ out.println(c.categoryDetails);
 <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryDetails }
 </c:forEach>
 <form:errors path="mfg" cssStyle="color:grey"></form:errors>
+</div>
+
+<div class="form-group">
+<label for="image">Image</label>
+<form:input path="image" type="file" class="form-control"/>
+<form:errors path="image" cssStyle="color:#ff0000"></form:errors>
 </div>
 
 <input type="submit" value="Edit Product" class="btn btn-default">

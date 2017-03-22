@@ -12,7 +12,13 @@
          rel = "stylesheet">
       <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-	
+	<script>
+		$(function()){
+			$('input[name=mfg]').datepicker({
+				format:'yyyy-mm-dd'
+			});
+		};
+	</script>
 </head>
 <body>
 <div class="container">

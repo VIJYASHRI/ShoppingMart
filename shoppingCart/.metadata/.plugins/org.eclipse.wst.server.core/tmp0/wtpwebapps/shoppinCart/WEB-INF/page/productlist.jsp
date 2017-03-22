@@ -34,12 +34,15 @@ $(document).ready(function(){
 					<th>Flavor</th>
 					<th>Price</th>
 					<th>Category</th>
-                   <th>View/Edit/Delete</th>
+                   <th>Action</th>
 				</tr>
 			</thead>
 			<c:forEach var="p" items="${productList}">
 				<tr>
-					<td>${p.image }</td>
+					<td>
+					<c:url var="src" value="C:/Images/${p.id }.png"></c:url>
+					<img src="${pageContext.request.contextPath }/resources/images/${p.id}" height="60" width="60"/>
+					</td>
 					<td>${p.name }</td>
 					<td>${p.description }</td>
 					<td>${p.weight }</td>
@@ -47,17 +50,20 @@ $(document).ready(function(){
 					<td>${p.flavour }</td>
 					<td>${p.price }</td>
 					<td>${p.category.categoryDetails}</td>
-				
-					<c:url var="viewProduct" value="/product/viewProduct/${p.id }"></c:url>
+					
+					
+					
 					<td>
-					<a href="${url }"><span class="glyphicon glyphicon-info-sign"></span></a>
-					 
+					<c:url var="viewProduct" value="/productlist/viewProduct/${p.id }"></c:url>
+				
+					<a href="${viewlProduct }"><span class="glyphicon glyphicon-info-sign"></span></a>
+					 <security:authorize access="hasRole('ROLE_ADMIN')">
 					<c:url var="delete" value="/productlist/deleteproduct/${p.id }"></c:url>
 					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span></a>
 					
 					<c:url var="edit" value="/productlist/editform/${p.id }"></c:url>
 					<a href="${edit }"><span class="glyphicon glyphicon-pencil"></span></a>
-				    </td>
+				    </security:authorize></td>
 				</tr>
 			</c:forEach>
 		</table>

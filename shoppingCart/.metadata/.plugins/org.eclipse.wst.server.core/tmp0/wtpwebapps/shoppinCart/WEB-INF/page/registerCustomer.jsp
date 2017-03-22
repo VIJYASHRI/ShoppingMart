@@ -1,4 +1,3 @@
-
 <%@ include file="header.jsp" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -29,7 +28,6 @@
       <div class="col-sm-10">
         <form:input class="form-control" path="firstname" placeholder="Enter the first name"/>
       </div>
-<form:errors path="firstname"></form:errors>
 </div>
 
 <div class="form-group">
@@ -37,36 +35,30 @@
       <div class="col-sm-10">
         <form:input class="form-control" path="lastname" placeholder="Enter the last name"/>
       </div>
-<form:errors path="lastname"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="email">EMAIL:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="email" placeholder="Enter email"/>
       </div>
-      <form:errors path="email"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="phoneNumber">CONTACT NUMBER:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="phoneNumber" placeholder="Enter phoneNumber"/>
       </div>
-      <form:errors path="phoneNumber"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="users.username">USER NAME:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="users.username" placeholder="Enter username"/>
       </div>
-      ${duplicateUsername }
-      <form:errors path="users.username"></form:errors>
 </div>
  <div class="form-group">
 <label class="control-label  col-sm-2" for="users.password">PASSWORD:</label>
       <div class="col-sm-10">
-        <form:input class="form-control" type="password" path="users.password" placeholder="Enter password"/>
+        <form:input class="form-control" path="users.password" placeholder="Enter password"/>
       </div>
-      <form:errors path="users.password"></form:errors>
 </div>
 
 <div class="form-group">
@@ -74,42 +66,36 @@
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.apartmentNumber" placeholder="Enter apartmentNumber"/>
       </div>
-      <form:errors path="billingAddress.apartmentNumber"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="billingAddress.streetName">STREET NAME:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.streetName" placeholder="Enter StreetName"/>
       </div>
-      <form:errors path="billingAddress.streetName"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="billingAddress.city">CITY:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.city" placeholder="Enter city"/>
       </div>
-      <form:errors path="billingAddress.city"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="billingAddress.state">STATE:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.state" placeholder="Enter state"/>
       </div>
-      <form:errors path="billingAddress.state"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="billingAddress.country">COUNTRY:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.country" placeholder="Enter country"/>
       </div>
-      <form:errors path="billingAddress.country"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="billingAddress.zip">ZIP:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="billingAddress.zip" placeholder="Enter zip"/>
       </div>
-      <form:errors path="billingAddress.zip"></form:errors>
 </div>
 
 <div class="form-group">
@@ -117,42 +103,36 @@
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.apartmentNumber" placeholder="Enter apartmentNumber"/>
       </div>
-      <form:errors path="shippingAddress.apartmentNumber"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="shippingAddress.streetName">STREET NAME:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.streetName" placeholder="Enter StreetName"/>
       </div>
-      <form:errors path="shippingAddress.streetName"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="shippingAddress.city">CITY:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.city" placeholder="Enter city"/>
       </div>
-      <form:errors path="shippingAddress.city"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="shippingAddress.state">STATE:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.state" placeholder="Enter state"/>
       </div>
-      <form:errors path="shippingAddress.state"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="shippingAddress.country">COUNTRY:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.country" placeholder="Enter country"/>
       </div>
-      <form:errors path="shippingAddress.country"></form:errors>
 </div>
 <div class="form-group">
 <label class="control-label  col-sm-2" for="shippingAddress.zip">ZIP:</label>
       <div class="col-sm-10">
         <form:input class="form-control" path="shippingAddress.zip" placeholder="Enter zip"/>
       </div>
-      <form:errors path="shippingAddress.zip"></form:errors>
 </div>
 <input type="submit" value="register">
 

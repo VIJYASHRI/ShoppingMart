@@ -13,7 +13,6 @@ import com.niit.model.CartItem;
 public class CartItemDaoImpl implements CartItemDao {
 	@Autowired
 	
-	private CartItem cartItem;
 	private SessionFactory sessionFactory;
 	Logger logger=Logger.getLogger(CartItemDaoImpl.class);
 	public CartItemDaoImpl(SessionFactory sessionFactory){
@@ -38,7 +37,7 @@ public class CartItemDaoImpl implements CartItemDao {
 	}
 	
 	public CartItem getCartItem(int cartItemId) {
-		sessionFactory.getCurrentSession().get(CartItem.class, cartItemId);
-		return cartItem;
+		
+		return (CartItem)sessionFactory.getCurrentSession().get(CartItem.class, cartItemId);
 	}
 }	
