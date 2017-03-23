@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div>
-		<div class="page=header">
+		<div class="pageheader">
 		<b>PRODUCT DETAILS</b>
 		</div>
 		<table class="table">
