@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="container">
-	<form:form action="addProduct" method="POST" commandName="product" class="form-horizontal"><br><br>
+	<form:form action="addProduct" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data"><br><br>
 <div class="form-group">
       <label class="control-label  col-sm-2" for="name">Product Name:</label>
       <div class="col-sm-10">
@@ -71,6 +71,12 @@
         <form:input class="form-control" path="date"  placeholder="Enter manufacturing date of product"/>
       </div>
     </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="image">Image:</label>
+      <div class="col-sm-10">
+        <form:input class="form-control" path="image"  type="file"/>
+      </div>
+    </div> 
     
       <div class="form-group">
       <label class="control-label col-sm-2"></label>

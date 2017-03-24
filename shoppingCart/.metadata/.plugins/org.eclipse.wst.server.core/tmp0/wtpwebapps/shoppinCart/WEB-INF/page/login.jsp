@@ -17,27 +17,22 @@ body {
 </style>
 </head>
 <body>
-  <div class="container">
-  <form action="<c:url value='/j_spring_security_check'></c:url>"  method="post" class="form-horizontal">
+ <div><center>
+<h2>ENTER USERNAME AND PASSWORD </h2></center>
+</div><br>
+${error }
+${logout }
+${registrationSuccess }   
 
+<!-- these 3 are model attribute, fr one value other two will be null -->
+<form action="j_spring_security_check" method="POST">
 
-     <p1>${error}
-		${logout}
-		${registrationSuccess }</p1>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="username"></label>
-      <div class="col-sm-10">
-        <input class="form-control" type="text" name="username" placeholder="Enter user name"/>
-      </div>
-    </div>
-    
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="password"></label>
-      <div class="col-sm-10">
-        <input class="form-control" type="password" name="password" placeholder="Enter password"/>
-      </div>
-    </div>
-    </form>
-    </div>
+<div><center>
+<input type="text" size="60" name="username" placeholder="username"><br><br>
+<input type="password" size="40" name="password" placeholder="Enter password"><br><br>
+ <input type="submit" value="submit">
+ </center>
+ </div>
+</form>
 </body>
 </html>

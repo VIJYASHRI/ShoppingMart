@@ -13,6 +13,14 @@
       <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
+
+<style>
+body {
+    background-color: lightgrey;
+    background-image: url("file:///C:/Users/VIJYA%20SHRI/Desktop/PK%20PRJ/ShoppingMart-master/shoppingCart/src/main/webapp/WEB-INF/resources/images/cakes/img/wall6.jpg");
+    background-size: cover;
+}
+</style>
 </head>
 <body>
 <div class="container-wrapper">
