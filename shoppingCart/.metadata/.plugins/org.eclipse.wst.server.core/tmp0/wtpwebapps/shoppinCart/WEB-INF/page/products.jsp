@@ -17,7 +17,7 @@
 <body>
 <%@ include file="header.jsp" %><br>
 <div class="container">
-	<form:form action="addProduct" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data"><br><br>
+	<form:form action="/addProduct" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
       <label class="control-label  col-sm-2" for="name">Product Name:</label>
       <div class="col-sm-10">
