@@ -25,8 +25,8 @@
     <security:http auto-config="true">
     <security:csrf disabled="true"/>       
     
-    <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
-    <security:intercept-url pattern="/all/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
+    <security:intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')"/>
+    <security:intercept-url pattern="/user**" access="hasAnyRole('ROLE_USER')"/>
     
     
     <security:form-login login-page="/login"

@@ -17,7 +17,7 @@
 <body>
 <%@ include file="header.jsp" %><br>
 <div class="container">
-	<form:form action="/addProduct" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data">
+	<form:form action="addProduct" method="POST" commandName="product" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
       <label class="control-label  col-sm-2" for="name">Product Name:</label>
       <div class="col-sm-10">
@@ -59,6 +59,16 @@
         <form:input class="form-control" path="price" placeholder="Enter the price of product"/>
       </div>
     </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2" class="radio-inline" for="category">Category</label>
+   
+       <c:forEach var="c" items="${categories}">
+        <form:radiobutton path="category.id" value="${c.id}" />${c.categoryDetails }
+     </c:forEach>
+      </div>
+
+    
     
      <div class="form-group">
       <label class="control-label col-sm-2" for="date">Date of delivery:</label>

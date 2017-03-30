@@ -108,11 +108,11 @@ li.dropdown {
 		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Select
 				by Category</a>
 			<div class="dropdown-content">
-
-       <a href="products/productsByCategory?searchCondition=New Arrivals">New Arrivals</a>
-      <a href="products/productsByCategory?searchCondition=Birthday">Birthday</a>
-      <a href="products/productsByCategory?searchCondition=Anniversary">Anniversary</a>
-      <a href="products/productsByCategory?searchCondition=Special Occasions">Special Occasions</a>
+		<a href="products/productsByCategory?searchCondition=Birthday">Birthday</a>
+        <a href="products/productsByCategory?searchCondition=New Arrivals">New Arrivals</a>
+      
+      	<a href="products/productsByCategory?searchCondition=Anniversary">Anniversary</a>
+        <a href="products/productsByCategory?searchCondition=Special Occasions">Special Occasions</a>
 			</div>
 				<%-- <c:url var="url_1"
 					value="/products/productsByCategory?searchCondition=New Arrivals">

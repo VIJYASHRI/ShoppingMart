@@ -14,12 +14,16 @@
 			<c:forEach var="c" items="${categories }">
 			<li><a href="<c:url value="/products/productsByCategory?searchCondition=${c.categoryDetails }"></c:url>">${c.categoryDetails }</a></li>
 			</c:forEach>
-			<c:url var="url_1" value="/products/productsByCategory?searchCondition=New Arrivals"> </c:url>
-			<li><a href="${url_1} }">New Arrivals</a></li>
-			<c:url var="url_2" value="/products/productsByCategory?searchCondition=Birthday"></c:url>
+			
+			<c:url var="url_2" value="products/productsByCategory?searchCondition=Birthday"></c:url>
 			<li><a href="${url_2} }">Birthday</a></li>
+			
+			<c:url var="url_1" value="products/productsByCategory?searchCondition=New Arrivals"> </c:url>
+			<li><a href="${url_1} }">New Arrivals</a></li>
+			
 			<c:url var="url_3" value="/products/productsByCategory?searchCondition=Anniversary"></c:url>
 			<li><a href="${url_3} }">Anniversary</a></li>
+			
 			<c:url var="url_4" value="/products/productsByCategory?searchCondition=Special Occasions"></c:url>
 			<li><a href="${url_4} }">Special Occasions</a></li>
 			</ul>
