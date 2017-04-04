@@ -1,0 +1,146 @@
+package com.niit.controller;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.niit.model.Category;
+import com.niit.model.Product;
+import com.niit.service.CategoryService;
+import com.niit.service.ProductService;
+@Controller
+public class ProductController {
+	@Autowired
+	private ProductService productService;
+	@Autowired
+	private CategoryService categoryService;
+	@Autowired(required= true)
+	Category category;
+	Path paths;
+
+@RequestMapping(value="/products", method = RequestMethod.GET)
+public String getProductForm(Model model) {
+	model.addAttribute("product", new Product());
+	model.addAttribute("categories", categoryService.getCategories());
+	return "products";
+}
+@RequestMapping(value="/addProduct", method = RequestMethod.POST)
+public String saveProduct( @Valid @ModelAttribute(value="product") Product product, BindingResult result, Model model) {
+	model.addAttribute("categories",categoryService.getCategories());	
+	
+	
+	if(result.hasErrors())
+		return "products";
+
+	/*product.setCategory(categoryService.getCategoryById(category.getId()));*/
+	productService.saveProduct(product);
+	
+	
+	/*@Autowired(required= true)*/
+	/*
+	 * private EmployeeService employeeServiceImpl;
+
+	@RequestMapping("/employee")
+	public String employee() {
+    this.employeeService.fetchAll();
+    return "employee";
+	}
+
+	 
+	@Autowired(required = true)
+	public void setEmployeeService(EmployeeService employeeServiceImpl) {
+	    this.employeeServiceImpl = employeeServiceImpl;
+	}*/
+	
+	MultipartFile prodImage = product.getImage();
+	//String root="D:/images";
+	String root=request.getSession().getServletContext().getRealPath("/");
+	
+	if(!prodImage.isEmpty()){
+		paths = Paths.get(root+ "/resources/images/cakes/img"+ product.getId()+ ".png");
+			try{
+				
+				prodImage.transferTo(new File(paths.toString()));
+				
+			}catch(IllegalStateException e){
+				e.printStackTrace();
+			}catch(IOException e){
+				e.printStackTrace();
+			}
+	}
+	System.out.println("paths"+ paths);
+	return "redirect:/products";
+}
+
+
+@RequestMapping("/productlist")
+public String getAllProduct(Model model){
+	List<Product> products=productService.getAllProduct(); //Assigning list of products to model attribute products
+	model.addAttribute("productList",products);
+	return "productlist";	
+}
+@RequestMapping("/viewproduct")
+public String viewProduct(@RequestParam("id")int id, Model model){
+	//List<Product>allproducts=productService.getAllProduct();
+	Product product = productService.getProductById(id);
+	model.addAttribute("product", product);
+	return "viewProduct";
+}
+@RequestMapping(value="/deleteproduct/{id}")
+public String deleteProduct(@PathVariable("id") int id){
+	Product product=productService.getProductById(id);
+	 productService.deleteProduct(product);
+	return "redirect:/productlist";
+}
+
+/**
+ *    to display the form to edit product details
+ */
+
+@RequestMapping("/editform")
+public String editProductForm(@RequestParam("id") int id,Model model){
+	Product product=productService.getProductById(id);
+	System.out.println("Inside Edit Product");
+	model.addAttribute("product",product);
+	model.addAttribute("categories",categoryService.getCategories());
+	return "editform";
+}
+@RequestMapping("/editProduct/{id}")
+public String editProductDetails(@Valid @ModelAttribute("product") Product product,
+		BindingResult result){
+	if(result.hasErrors())
+		return "home";
+	productService.updateProduct(product);
+	return "redirect:/productlist";
+
+}
+@RequestMapping("/productsByCategory")
+public String getProductsByCategory(@RequestParam (name="searchCondition") String searchCondition,
+		Model model){
+	List<Product> products=productService.getAllProduct();
+	//Assigning list of products to model attribute products
+	model.addAttribute("productList",products);
+	model.addAttribute("searchCondition",searchCondition);
+	return "productlist";
+	}	
+
+
+
+}

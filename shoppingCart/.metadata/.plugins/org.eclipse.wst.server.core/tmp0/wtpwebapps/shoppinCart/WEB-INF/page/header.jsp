@@ -93,7 +93,7 @@ li.dropdown {
 		<li><a href="home">Home</a></li>
 		<li><a href="aboutUs">About Us</a></li>
 		
-		<c:url var="url" value="/admin/products"></c:url>
+		<c:url var="url" value="/products"></c:url>
 		
 		<c:if test="${pageContext.request.userPrincipal.name !=null }">
 		<!-- for admin access only, also add tag libs for security access for admin role -->
@@ -102,8 +102,8 @@ li.dropdown {
 		<li><a href="${url }">Add New Product</a></li>
 		</security:authorize>
 		
-		<c:url var="allProducts" value="/all/product/productlist"></c:url>
-		<li><a href="${allProducts}">Browse all products</a></li>
+		<c:url var="allProducts" value="/productlist"></c:url>
+		<li><a href="${allProducts}">View all products</a></li>
 
 		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Select
 				by Category</a>
@@ -132,7 +132,7 @@ li.dropdown {
 	</ul> --%>
 		<a href="">WelCome ${pageContext.request.userPrincipal.name }</a>
 		</c:if>
-		
+		<li><a href="<c:url value="/cart/getCartId"></c:url>">Cart</a></li>
 		<c:if test="${pageContext.request.userPrincipal.name ==null }">
 		<li><a href="<c:url value="/login" ></c:url>">login</a></li>
 		<li><a href="<c:url value="/registerCustomer"></c:url>">Register</a></li>

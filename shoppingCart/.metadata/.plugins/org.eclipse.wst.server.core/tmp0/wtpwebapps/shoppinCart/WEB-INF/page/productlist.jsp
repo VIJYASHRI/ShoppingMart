@@ -34,7 +34,7 @@ $(document).ready(function(){
 					<th>Flavor</th>
 					<th>Price</th>
 					<th>Category</th>
-                   <th>Action</th>
+                   <th>Action</th>    <!-- Action = view/edit/delete -->
 				</tr>
 			</thead>
 			<c:forEach var="p" items="${productList}">
@@ -56,7 +56,7 @@ $(document).ready(function(){
 					<td>
 					<c:url var="viewProduct" value="/viewProduct?id=${p.id }"></c:url>
 				
-					<a href="${viewlProduct }"><span class="glyphicon glyphicon-info-sign"></span></a>
+					<a href="${viewProduct }"><span class="glyphicon glyphicon-info-sign"></span></a>
 					 <security:authorize access="hasRole('ROLE_ADMIN')">
 					<c:url var="delete" value="/deleteproduct/${p.id }"></c:url>
 					<a href="${delete }"><span class="glyphicon glyphicon-remove"></span></a>

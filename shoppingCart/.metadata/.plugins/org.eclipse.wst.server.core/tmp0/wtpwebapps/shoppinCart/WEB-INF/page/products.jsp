@@ -64,7 +64,7 @@
       <label class="control-label col-sm-2" class="radio-inline" for="category">Category</label>
    
        <c:forEach var="c" items="${categories}">
-        <form:radiobutton path="category.id" value="${c.id}" />${c.categoryDetails }
+        <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryDetails }
      </c:forEach>
       </div>
 

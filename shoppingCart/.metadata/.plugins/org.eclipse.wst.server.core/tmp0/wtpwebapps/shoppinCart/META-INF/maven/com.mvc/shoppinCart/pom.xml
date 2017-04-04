@@ -143,7 +143,6 @@
     <artifactId>commons-io</artifactId>
     <version>2.5</version>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/log4j/log4j -->
 
   <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
 <dependency>

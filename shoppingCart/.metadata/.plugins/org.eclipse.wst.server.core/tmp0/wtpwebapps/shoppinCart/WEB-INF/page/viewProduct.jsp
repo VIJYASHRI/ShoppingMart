@@ -28,7 +28,7 @@
 		
 		  <tr>
 		  <td>Manufacturing Date :</td>
-		  <td>${product.manufacturingDate }</td>
+		  <td>${product.date }</td>
 		 </tr>
 		</table>
 	</div>
