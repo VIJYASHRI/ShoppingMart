@@ -1,0 +1,5 @@
+package cartDao;
+
+public interface CartDao {
+
+}
