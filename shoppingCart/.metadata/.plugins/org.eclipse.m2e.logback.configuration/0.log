@@ -5129,3 +5129,179 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2017-04-05 13:27:01,615 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
 2017-04-05 13:27:01,633 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-04-05 13:27:01,635 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 11:15:01,682 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:15:01,739 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-06 11:15:01,764 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:15:01,793 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\login\src\test\resources
+2017-04-06 11:15:07,918 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:15:07,920 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 11:15:07,927 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:15:07,930 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 11:31:47,255 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:31:47,563 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 11:31:47,566 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:31:47,644 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 11:50:15,164 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:50:15,254 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 11:50:15,271 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 11:50:15,279 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:10:50,332 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.mvc:shoppinCart:0.0.1-SNAPSHOT @ C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\pom.xml.
+2017-04-06 12:15:44,632 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:15:45,570 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:15:45,649 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:15:46,846 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:16:03,613 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for shoppinCart
+2017-04-06 12:16:10,115 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:16:10,127 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:16:10,137 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:16:10,154 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:16:10,155 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of shoppinCart
+2017-04-06 12:16:10,157 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for shoppinCart
+2017-04-06 12:16:10,275 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:17:00,305 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart
+2017-04-06 12:17:00,321 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2017-04-06 12:21:29,373 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:21:29,482 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:21:29,523 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:21:29,553 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:30:52,288 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:30:52,652 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:30:52,911 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:30:53,047 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:33:57,683 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:33:57,770 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:33:57,793 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:33:57,807 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:34:24,589 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:34:24,626 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:34:24,642 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:34:24,703 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:35:04,707 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:35:04,740 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:35:04,758 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:35:04,793 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:41:19,582 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:41:19,739 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:41:19,910 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:41:20,154 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 12:47:41,082 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:47:41,567 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 12:47:41,671 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 12:47:41,996 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:09:13,802 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:09:14,512 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:09:14,526 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:09:14,567 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:12:31,558 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:12:32,057 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:12:32,305 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:12:32,407 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:13:01,586 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:13:01,925 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:13:02,289 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:13:02,506 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:18:27,061 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:18:27,376 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:18:27,406 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:18:27,462 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:21:34,773 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:21:34,904 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:21:34,985 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:21:35,174 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:25:22,263 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:25:22,375 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\resources
+2017-04-06 13:25:22,516 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 13:25:22,559 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\test\resources
+2017-04-06 13:46:44,153 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2017-04-06 13:46:45,377 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2017-04-06 13:46:46,156 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.pom
+2017-04-06 13:46:48,933 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.pom
+2017-04-06 13:48:15,918 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\ShoppingCart\CollaborationBackEnd\pom.xml
+2017-04-06 13:48:20,552 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar
+2017-04-06 13:48:23,159 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar
+2017-04-06 13:48:33,854 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.social.collaboration:CollaborationBackEnd:0.0.1-SNAPSHOT @ C:\ShoppingCart\CollaborationBackEnd\pom.xml.
+2017-04-06 13:48:35,520 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+2017-04-06 13:48:35,974 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+2017-04-06 13:48:37,400 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2017-04-06 13:48:38,590 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2017-04-06 13:48:39,558 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2017-04-06 13:48:43,569 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2017-04-06 13:48:49,083 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CollaborationBackEnd/src/main/java
+2017-04-06 13:48:49,139 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CollaborationBackEnd/src/test/java
+2017-04-06 13:48:50,438 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 34 sec
+2017-04-06 13:49:04,792 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 13:49:04,873 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\main\resources
+2017-04-06 13:49:04,917 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 13:49:04,982 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\test\resources
+2017-04-06 13:59:25,455 [Worker-42] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\ShoppingCart\restsample\pom.xml
+2017-04-06 13:59:27,138 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.social.collaboration:restsample:0.0.1-SNAPSHOT @ C:\ShoppingCart\restsample\pom.xml.
+2017-04-06 13:59:28,759 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/main/java
+2017-04-06 13:59:28,843 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/test/java
+2017-04-06 13:59:29,107 [Worker-42] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2017-04-06 13:59:31,816 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 13:59:31,817 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 13:59:31,935 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 13:59:31,989 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:02:27,181 [Worker-53] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\ShoppingCart\restsample\pom.xml
+2017-04-06 14:02:27,951 [Worker-53] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.social.collaboration:restsample:0.0.1-SNAPSHOT @ C:\ShoppingCart\restsample\pom.xml.
+2017-04-06 14:02:28,300 [Worker-53] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/main/java
+2017-04-06 14:02:28,387 [Worker-53] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/test/java
+2017-04-06 14:02:29,184 [Worker-53] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2017-04-06 14:02:29,894 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:02:29,986 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 14:02:30,001 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:02:30,063 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:04:19,963 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:04:19,964 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\main\resources
+2017-04-06 14:04:19,967 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:04:20,363 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\test\resources
+2017-04-06 14:05:20,002 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:05:20,134 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\main\resources
+2017-04-06 14:05:20,232 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:05:20,261 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\test\resources
+2017-04-06 14:05:28,605 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:05:28,696 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\main\resources
+2017-04-06 14:05:28,713 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:05:28,727 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\CollaborationBackEnd\src\test\resources
+2017-04-06 14:10:09,287 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:10:09,288 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 14:10:09,292 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:10:09,888 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:10:47,336 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:10:47,439 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 14:10:47,567 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:10:47,825 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:11:47,755 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:11:47,810 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 14:11:47,828 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:11:47,843 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:13:08,298 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:13:08,308 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\main\resources
+2017-04-06 14:13:08,313 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-06 14:13:08,470 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:14:57,979 [Worker-52] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\ShoppingCart\restsample\pom.xml
+2017-04-06 14:14:59,322 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.social.collaboration:restsample:0.0.1-SNAPSHOT @ C:\ShoppingCart\restsample\pom.xml.
+2017-04-06 14:15:02,816 [Worker-52] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/main/java
+2017-04-06 14:15:02,844 [Worker-52] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /restsample/src/main/resources
+2017-04-06 14:15:02,867 [Worker-52] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restsample/src/test/java
+2017-04-06 14:15:09,858 [Worker-52] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 11 sec
+2017-04-06 14:15:14,535 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:15:17,367 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-06 14:15:17,655 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:15:17,936 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:17:20,064 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:17:22,567 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-06 14:17:22,902 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:17:23,040 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:18:21,121 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:18:21,266 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-06 14:18:21,322 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:18:21,410 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:19:09,111 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:19:09,236 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-06 14:19:09,274 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:19:09,601 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
+2017-04-06 14:20:08,313 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:20:08,467 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-06 14:20:08,580 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-06 14:20:08,754 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingCart\restsample\src\test\resources
