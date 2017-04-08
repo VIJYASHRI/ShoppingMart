@@ -97,15 +97,15 @@
     </a>
   </div>
 </div>
-<div class="container">
+<!-- <div class="container">
   <ul class="nav navbar-nav">
       <li class="active">
       <li><a href="viewProduct">View Products</a></li>
-      <!-- <li><a href="productlist">Product list</a></li> -->
+      <li><a href="productlist">Product list</a></li> 
       <li><a href="#">About Us</a></li>
     </ul><br>
 
-  </div>
+  </div> -->
 </center>
 </body>
 <%@ include file="footer.jsp" %>

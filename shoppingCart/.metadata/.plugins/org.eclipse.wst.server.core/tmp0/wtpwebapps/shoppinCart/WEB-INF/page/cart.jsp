@@ -8,10 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div ng-app="app" ng-controller="ProductController">
+<div ng-init="grtCart(${cartId})">
+Clear Cart
 
-
-
-
+<c:url" class="btn btn-success pull-right"> Check Out </c:url>
 <table class="table table-striped">
 <thead>
 <tr><th>Name</th><th>Quantity</th><th>Total Price</th>
@@ -24,12 +25,15 @@
 <td>{{cartItem.totalPrice}}</td>
 </tr>
 
+<tr>
+<td>Remove</td>
+</tr>
+
 </table>
-
-
-
-
+Total Price : {{calculateGrandTotal()}}
 
 <script src="<c:url value="/resources/js/controller.js"></c:url>"></script>
+</div>
+</div>
 </body>
 </html>

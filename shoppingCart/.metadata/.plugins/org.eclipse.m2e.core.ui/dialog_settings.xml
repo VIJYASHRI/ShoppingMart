@@ -58,6 +58,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart\src\main\java\com\niit\controller\ProductController.java"/>
+			<item value="C:\ShoppingCart\CollaborationBackEnd"/>
 			<item value="C:\Users\VIJYA SHRI\Desktop\PK PRJ\ShoppingMart-master\shoppingCart"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -71,13 +73,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.niit.login"/>
+			<item value="com.niit.restcrudclient"/>
 		</list>
 		<list key="groupId">
 			<item value="com.niit"/>
 		</list>
 		<list key="artifactId">
-			<item value="login"/>
+			<item value="restcrudclient"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

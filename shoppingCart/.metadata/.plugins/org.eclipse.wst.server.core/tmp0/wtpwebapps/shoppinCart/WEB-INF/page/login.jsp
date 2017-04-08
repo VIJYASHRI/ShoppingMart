@@ -10,7 +10,7 @@
 <style>
 body {
     background-color: lightgrey;
-    background-image: url("file:///C:/Users/VIJYA%20SHRI/Desktop/PK%20PRJ/ShoppingMart-master/shoppingCart/src/main/webapp/WEB-INF/resources/images/1bg.jpg");
+    background-image: url("file:///C:/Users/VIJYA%20SHRI/Desktop/PK%20PRJ/ShoppingMart-master/shoppingCart/src/main/webapp/resources/images/cakes/img/1bg.jpg");
     background-size: cover;
 }
 

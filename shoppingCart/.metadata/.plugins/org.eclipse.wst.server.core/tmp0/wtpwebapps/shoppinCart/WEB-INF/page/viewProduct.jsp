@@ -30,9 +30,25 @@
 		  <td>Manufacturing Date :</td>
 		  <td>${product.date }</td>
 		 </tr>
+		 
+		 <tr>
+		 <td>Image :</td>
+		 <td>${product.image}</td>
+		 </tr>
+		 
+	<%-- 	 <tr>			
+			<td><a href="" ng-click="addToCart(${product.id })"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>
+			</tr>
+		 
+		 
 		</table>
 	</div>
-
+	
+	<script src="<c:url value="/resources/js/controller.js"></c:url>"></script>
+ --%>
+ </table>	
+</div>
+ <script><img src="<c:url value='/resources/images/cakes/img/${p.id}.png'/>" height="60" width="60"/></script>
 </body>
 <%@ include file="footer.jsp"%>
 </html>
