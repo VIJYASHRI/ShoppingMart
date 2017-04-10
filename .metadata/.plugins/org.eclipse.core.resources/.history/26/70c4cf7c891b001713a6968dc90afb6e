@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="HelloController">
+Enter firstname <input type="text" ng-model="firstname"><br>
+Enter lastname <input type="text" ng-model="lastname"><br>
+<button ng-click="sayHello()"> Say Hello</button>
+{{message}}
+</div>
+
+</body>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript" src="https:/.js"></script>
+<script type="text/javascript" src="https:/.js"></script>
+
+
+</html>
